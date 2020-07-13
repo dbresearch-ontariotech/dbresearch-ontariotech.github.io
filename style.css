@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=VT323&display=swap');
+@import '/pygments/colorful.css';
+
+:root {
+    --title-color: teal;
+    --code: 'VT323',monospace;
+    --font: 'Old Standard TT',serif;
+}
+
+
+body {
+    font-family: var(--font);
+    font-size: 16pt;
+    line-height: 1.5em;
+}
+
+p.footer {
+    text-align: right;
+    font-size: 75%;
+    padding-right: 40px;
+    margin-top: 40px;
+    font-style: italic;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+h1,h2,h3,h4,h5 {
+    color: var(--title-color);
+}
+
+div.jumbotron {
+    background: none;
+}
+
+.sections .row {
+    margin-bottom: 20px;
+}
+
+/* =================== Sections =============== */
+
+.section-title {
+    font-style: italic;
+    font-size: 120%;
+    border-bottom: 2px solid var(--title-color);
+}
+
+.section-statement {
+    width: 80%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =================== Members =============== */
+.section-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: middle;
+    flex-wrap: wrap;
+}
+
+.member-photo {
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.member {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    margin: 15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.member .name {
+    font-weight: bold;
+    font-style: italic;
+}
+.member .email {
+    font-family: var(--code);
+}
+.member ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* =================== Projects =============== */
+.section-projects h1 {
+    font-size: 100%;
+}
+.section-projects img.project-photo {
+    width: 100%;
+}
+.section-projects .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-projects .read-more {
+    text-align: right;
+}
+
+/* =================== References ============== */
+.references {
+    text-align: justify;
+}
+.references .by-years h1 {
+    font-size: 120%;
+}
+.references li {
+    list-style: none;
+    margin: 20px 0 20px;
+}
+.references span {
+    margin-right: 20px;
+}
+
+.references span.title {
+    font-style: italic;
+}
+.references span.author {
+}
+
+.references span.type {
+    background: var(--title-color);
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 60%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+pre {
+    background-color: transparent;
+    border: none;
+    font-size: 90%;
+}
